@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>The Philosophers Map</title>
+    <link rel="stylesheet" href="./assets/design/flex.css">
+    <link rel="stylesheet" href="./assets/design/style.css">
+    <script src="./assets/scripts/loadJson.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Merienda|Oxygen" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">The Philosophers Map</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex flex-column flex-height-100">
+            <section class="header-container flex flex-column flex-align-center">
+                <div class="flex flex-column flex-align-center margin-15t">
+                    <h1>The Philosophers Map</h1>
+                    <p class="flex flex-40">search mapped information about more than a thousand philosophers! compare, reasearch and collect data easily</p>
+                </div>
+				
+            </section>
+            <section class="body-container flex flex-row flex-content-center flex-align-center">
+			<img src="Plato.jpg" alt="plato" width="270" height="400" class="left">
+                <div class="flex flex-column flex-50 margin-15t">				
+                    <div class="about-container">
+                        <p>We are 3 students of "Computer Science" Bachlor degree in "Ben-Gurion University of the Negev".
+						As part of the course "Digital Humanities For CS students" we created this project in order to help the philosophy department in reasearch and study. The main goal of our project is to visualize big amount of data about all the philosophers during all times.
+						<br><br>The Process :<br>
+						At first we imported data by asking queris with the tool of <a href="https://query.wikidata.org/" target="_blank">Wikidata</a>.
+						Then we analyzed the data in OpenRefine and fixed it. By using the OpenRefine tool we created a JSON file with all the data about each philosopher. We developed some scripts in order to get the right coordinates of birth place and death place. And finally we created functions that will help filter the data in the most efficient way.
+						<br>
+						<br>In the main page we present the 'big picture' by showing each philosopher's marker on the global map, marked by his birth place. In addition to it, you can filter the philosopher's data by many criteria such as : Alive\Dead , Born Before, Male\Female etc.
+						<br><br>Questions you might ask yourself using our filter tool :<br>
+						-How many female philosophers were during the history?<br>
+						-At which time of the history did female philosophers started to appear?<br>
+						-From which global area came out most of the philosophers?<br>
+						-Where was the main scattering of philosophers during World War 2?<br>
+						-Which philosophers were alive in the middle-ages?<br>
+						 </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <script src="./assets/scripts/renderLang.js"></script>
+    <script src="./assets/scripts/renderNation.js"></script>
+    <script src="./assets/scripts/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
